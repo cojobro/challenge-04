@@ -5,6 +5,56 @@
 }
 
 .title {
-  font-size: 3rem;
+  margin-top: 60px;
+  margin-bottom: 15px;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 38px;
   color: black;
 }
+
+.editButton {
+  position: absolute;
+  z-index: 1;
+  margin-top: 20px;
+  margin-right: 25px;
+  top: 0;
+  right: 0;
+  color: white;
+  background-color: royalblue;
+  border-radius: 8px;
+  padding: 7px;
+  overflow: hidden;
+  font-size: 16px;
+}
+
+/* Tablet and Desktop Overrides (min-width: 769px) */
+@media (min-width: 769px) {
+  .title {
+    font-size: 48px; /* Restore desktop title size */
+    margin-top: 100px;
+    margin-bottom: 30px;
+  }
+
+  .editButton {
+    position: absolute;
+    z-index: 1;
+    margin-top: 45px;
+    margin-right: 50px;
+    top: 0;
+    right: 0;
+    color: white;
+    background-color: royalblue;
+    border-radius: 8px;
+    padding: 10px;
+    overflow: hidden;
+    font-size: 20px;
+  }
+}
+
+/* Specific Desktop Overrides (none needed based on specs) */
+/* @media (min-width: 1200px) { */
+  /* Styles only for 1200px and up */
+/* } */

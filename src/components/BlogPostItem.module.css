@@ -1,0 +1,69 @@
+.blogPostItem {
+    background-color: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    /* Mobile First Styles */
+    padding: 15px; /* Reduced padding for mobile */
+    box-sizing: border-box; /* Include padding and border in element's total width/height */
+}
+
+.titleLink {
+    text-decoration: none; /* Remove underline from link */
+    color: #333333; /* Default title color */
+}
+
+.titleLink:hover .title,
+.titleLink:focus .title { /* Added focus for accessibility */
+    color: #007BFF; /* Blue hover/focus color */
+}
+
+.title {
+    /* Mobile First Styles */
+    font-size: 20px; /* Mobile title size */
+    font-weight: bold;
+    margin-top: 0; /* Remove default margin */
+    margin-bottom: 10px; /* Space below title */
+    color: black; /* Inherit color from parent link */
+}
+
+.summary {
+    /* Mobile First Styles */
+    font-size: 14px; /* Mobile summary size */
+    color: #666666;
+    margin-top: 0;
+    margin-bottom: 10px; /* Space below summary */
+    /* Ensure summary doesn't overflow if too long, although requirement is 50-100 words */
+    /* Add line-height for better readability */
+    line-height: 1.5;
+}
+
+.date {
+    /* Mobile First Styles */
+    font-size: 12px; /* Mobile date size */
+    color: #999999;
+    margin-top: 0;
+    margin-bottom: 0; /* No space below date */
+}
+
+/* Tablet and Desktop Overrides (min-width: 769px) */
+@media (min-width: 769px) {
+    .blogPostItem {
+    padding: 20px; /* Restore desktop padding */
+    }
+
+    .title {
+    font-size: 24px; /* Restore desktop title size */
+    }
+
+    .summary {
+    font-size: 16px; /* Restore desktop summary size */
+    }
+
+    .date {
+    font-size: 14px; /* Restore desktop date size */
+    }
+}
+
+/* Specific Desktop Overrides (none needed based on specs) */
+/* @media (min-width: 1200px) { */
+    /* Styles only for 1200px and up */
+/* } */

@@ -1,0 +1,119 @@
+.blogPostForm {
+    background-color: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    /* Mobile First Styles */
+    padding: 20px; /* Reduced padding for mobile */
+    box-sizing: border-box; /* Include padding and border in element's total width/height */
+    display: flex;
+    flex-direction: column;
+}
+
+.formGroup {
+    margin-top: 15px;
+}
+
+label {
+    font-size: 14px;
+    display: block;
+    color: #333333;
+    margin-bottom: 5px;
+}
+
+input {
+    font-size: 14px;
+    color: #333333;
+    width: 100%;
+    padding: 10px;
+    border: #CCCCCC solid 1px;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.summaryInput {
+    color: #333333;
+    border: #CCCCCC solid 1px;
+    border-radius: 4px;
+    width: 100%;
+    min-height: 60px;
+    resize: none;
+    overflow: hidden;
+    font-size: 14px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:global(.sun-editor) {
+    border: #CCCCCC solid 1px !important;
+    border-radius: 4px !important;
+    overflow: hidden;
+}
+
+:global(.se-btn-tool-format),
+:global(.se-btn-tool-size) {
+    font-size: 14px !important;
+}
+
+/* :global(.react-datepicker-ignore-onclickoutside) {
+    font-size: 14px;
+    color: #333333;
+} */
+
+.error {
+    font-size: 12px;
+    color: #FF0000;
+}
+
+.submitButton {
+    margin-top: 15px;
+    align-self: flex-end;
+    color: white;
+    background-color: royalblue;
+    border-radius: 8px;
+    padding: 20px;
+    overflow: hidden;
+    font-size: 20px;
+    width: 100%;
+}
+
+@media (min-width: 769px) {
+    .blogPostForm {
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 20px; /* Restore desktop padding */
+    }
+
+    .formGroup {
+        margin-top: 20px;
+    }
+
+    label {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    
+    input {
+        font-size: 16px;
+    }
+
+    .summaryInput {
+        font-size: 16px;
+    }
+
+    .error {
+        font-size: 14px;
+    }
+
+    .submitButton {
+        margin-top: 20px;
+        width:auto;
+        padding: 10px;
+    }
+}

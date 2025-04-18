@@ -1,0 +1,32 @@
+.blogPostList {
+    display: grid;
+    /* Mobile First: Single Column */
+    grid-template-columns: 1fr; /* Full width single column */
+    gap: 20px; /* Vertical gap for mobile */
+    padding: 10px; /* Optional: Add some padding around the list */
+}
+
+/* Styles for the "No posts" message */
+.noPostsMessage {
+    text-align: center;
+    color: #666;
+    font-style: italic;
+    padding: 20px;
+}
+
+/* Tablet Layout (min-width: 769px) */
+@media (min-width: 769px) {
+    .blogPostList {
+    /* Two Columns */
+    grid-template-columns: repeat(2, 1fr); /* Equal width two columns */
+    /* Gap applies both horizontally and vertically */
+    }
+}
+
+/* Desktop Layout (min-width: 1200px) */
+@media (min-width: 1200px) {
+    .blogPostList {
+    /* Three Columns */
+    grid-template-columns: repeat(3, 1fr); /* Equal width three columns */
+    }
+}
