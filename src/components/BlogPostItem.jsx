@@ -7,10 +7,10 @@ import styles from './BlogPostItem.module.css'; // Import CSS Module
 const formatDate = (dateString) => {
   const date = new Date(dateString);
   // Adjust for potential timezone offset if the input is just YYYY-MM-DD
-  // const userTimezoneOffset = date.getTimezoneOffset() * 60000;
-  // const adjustedDate = new Date(date.getTime() + userTimezoneOffset);
+  const userTimezoneOffset = date.getTimezoneOffset() * 60000;
+  const adjustedDate = new Date(date.getTime() + userTimezoneOffset);
 
-  return date.toLocaleDateString('en-US', {
+  return adjustedDate.toLocaleDateString('en-US', {
     year: 'numeric',
     month: 'long',
     day: 'numeric',
